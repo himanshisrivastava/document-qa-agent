@@ -183,14 +183,6 @@ Tests mock the LLM — no API key required.
 pip install -r requirements-test.txt
 pytest
 ```
-
-There are 30 tests covering:
-- Upload validation (size limits, overwrite, newline preservation)
-- Question validation (empty, oversized)
-- HTTP error cases (no document uploaded)
-- Agent tool selection (search, stats, read)
-- Tool output correctness (real file I/O, no mocked tools)
-
 ---
 
 ## Evaluation (Ragas)
