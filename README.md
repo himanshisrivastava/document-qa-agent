@@ -246,3 +246,10 @@ The dataset lives in `evals/dataset.json`. Add more `{ "name", "document", "ques
 | `LANGCHAIN_TRACING_V2` | ❌ | `false` | Enable LangSmith tracing |
 | `LANGCHAIN_API_KEY` | ❌ | — | LangSmith API key (required if tracing enabled) |
 | `LANGCHAIN_PROJECT` | ❌ | — | LangSmith project name |
+
+
+## Improvements to be added
+1. Chunking to data for large datasets
+2. Storing the chunks in a vectordb 
+3. Use embeddings for finding relevant chunks
+4. Ability to upload more than one document
