@@ -19,28 +19,6 @@ The agent has three tools:
 | `search_document` | Targeted keyword lookups in large documents |
 | `document_stats` | Questions about length, word count, or size |
 
----
-
-## Project structure
-
-```
-app/
-├── main.py              # App factory — wires routers into FastAPI
-├── config.py            # Settings (pydantic-settings, reads from env / .env)
-├── models.py            # Pydantic request/response schemas
-├── agent/
-│   ├── tools.py         # LangChain tool definitions
-│   └── runner.py        # Agent construction and ask_agent()
-└── routes/
-    └── documents.py     # POST /documents and POST /questions handlers
-
-tests/                   # Unit tests (LLM mocked — no API key needed)
-evals/
-├── dataset.json         # Evaluation examples
-└── run_eval.py          # Ragas evaluation harness
-```
-
----
 
 ## Setup
 
