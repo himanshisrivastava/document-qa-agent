@@ -1,0 +1,31 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+
+    # Load secrets from .env — the file is NOT copied into the image.
+    env_file:
+      - .env
+
+    # Runtime env vars (non-secret).
+    environment:
+      DOCUMENT_DIR: /data
+      PYTHONUNBUFFERED: "1"
+
+    # Named volume keeps document.txt alive across container restarts.
+    volumes:
+      - doc_storage:/data
+
+    # Restart automatically unless explicitly stopped.
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/docs')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  doc_storage:

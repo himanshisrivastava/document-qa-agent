@@ -1,0 +1,26 @@
+[
+  {
+    "name": "factual_lookup",
+    "document":"Himanshi is a senior platform engineer working for Dart platform team in Barclays. She joined Barclays Glasgow office in 2023. \nShe has recently moved to London and is looking for new roles in Barclays London office. \nShe has an interview scheduled on 29th May’26 for Forwards Deployment Engineering role which requires expertise in AI technologies. She does not have professional experience in building AI systems but is passionate to learn and try out new technologies. So she is preparing for the upcoming interview. The feedback from the interview will be shared on 1st June’26. She has already resigned from her current role and her last day at Barclays is 30th June’26. ",
+    "question": "What is Himanshi's role?",
+    "ground_truth": "Himanshi is a senior platform engineer."
+  },
+  {
+    "name": "summary",
+    "document":"Himanshi is a senior platform engineer working for Dart platform team in Barclays. She joined Barclays Glasgow office in 2023. \nShe has recently moved to London and is looking for new roles in Barclays London office. \nShe has an interview scheduled on 29th May’26 for Forwards Deployment Engineering role which requires expertise in AI technologies. She does not have professional experience in building AI systems but is passionate to learn and try out new technologies. So she is preparing for the upcoming interview. The feedback from the interview will be shared on 1st June’26. She has already resigned from her current role and her last day at Barclays is 30th June’26. ",
+    "question": "Give a brief summary of Himanshi's background.",
+    "ground_truth": "Himanshi is a senior platform engineer at Barclays, having joined the Glasgow office in 2023. She has moved to London and is seeking new opportunities there."
+  },
+  {
+    "name": "negative_lookup",
+    "document":"Himanshi is a senior platform engineer working for Dart platform team in Barclays. She joined Barclays Glasgow office in 2023. \nShe has recently moved to London and is looking for new roles in Barclays London office. \nShe has an interview scheduled on 29th May’26 for Forwards Deployment Engineering role which requires expertise in AI technologies. She does not have professional experience in building AI systems but is passionate to learn and try out new technologies. So she is preparing for the upcoming interview. The feedback from the interview will be shared on 1st June’26. She has already resigned from her current role and her last day at Barclays is 30th June’26. ",
+    "question": "Who is Himanshi's manager?",
+    "ground_truth": "No, the document does not mention any manager."
+  },
+  {
+    "name":"stats_question",
+    "document":"Himanshi is a senior platform engineer working for Dart platform team in Barclays. She joined Barclays Glasgow office in 2023. \nShe has recently moved to London and is looking for new roles in Barclays London office. \nShe has an interview scheduled on 29th May’26 for Forwards Deployment Engineering role which requires expertise in AI technologies. She does not have professional experience in building AI systems but is passionate to learn and try out new technologies. So she is preparing for the upcoming interview. The feedback from the interview will be shared on 1st June’26. She has already resigned from her current role and her last day at Barclays is 30th June’26. ",
+    "question":"How many lines are in the document?",
+    "ground_truth":"The document has approximately 3 lines."
+  }
+]
